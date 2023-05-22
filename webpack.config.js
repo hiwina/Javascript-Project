@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
-    module: {
+  module: {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/i,
@@ -27,4 +27,4 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-}
+};
