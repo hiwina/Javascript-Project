@@ -62,8 +62,6 @@ footer p {
 }
 
 .movie-cards {
-  /* text-align: center; */
-  background-color: lightpink;
   padding: 10px;
   border-radius: 5px;
   margin: 0;
@@ -99,8 +97,4 @@ button {
   border-radius: 10px;
   font-size: 1.2rem;
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
 }
