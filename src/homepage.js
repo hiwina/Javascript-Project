@@ -4,7 +4,6 @@ const movieApi = async () => {
   const ShowResult = await fetchResult.json();
   return ShowResult.slice(0, 12);
 };
-movieApi();
 
 const movieList = async () => {
   const allMovies = await movieApi();
@@ -21,7 +20,7 @@ const movieList = async () => {
                           <i class="fa fa-heart" aria-hidden="true"></i>
                           <p>20 likes</p>
                         </div>
-                        <button>Comments</button>`;
+                        <button class="comment-btn">Comments</button>`;
 
     cardUL.appendChild(cardLI);
     CardContainer.appendChild(cardUL);
