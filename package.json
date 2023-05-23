@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,14 @@
     "html-webpack-plugin": "^5.5.1",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
+    "serve": "^14.2.0",
     "style-loader": "^3.3.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
     "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
