@@ -1,3 +1,100 @@
-h1 {
-  color: red;
+.container {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.navbar {
+  padding: 0 10px;
+  border-radius: 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.nav-list li a:hover {
+  color: blueviolet;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  margin: 20px auto;
+  background-color: white;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  padding: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+  padding-right: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+.movie-cards {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-title {
+  text-align: center;
+  color: #464646;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+  width: 340px;
+  height: 400px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: grey;
+  border: 1px solid beige;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
