@@ -3,6 +3,15 @@
   margin: 0 auto;
 }
 
+h3 {
+  margin: 10px 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 20px 0 40px 0;
+}
+
 .navbar {
   padding: 0 10px;
   border-radius: 3px;
@@ -18,6 +27,10 @@
   border-radius: 5px;
 }
 
+.remove {
+  display: none;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -29,7 +42,7 @@
   color: black;
   font-weight: 600;
   font-size: 1.3rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-list li a:hover {
@@ -37,7 +50,7 @@
 }
 
 footer {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   position: fixed;
   bottom: 0;
   left: 7%;
@@ -57,6 +70,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 2px solid black;
+
   /* margin: 0 auto; */
 }
 
@@ -79,6 +93,8 @@ footer p {
 .movie-info {
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .movie-cards img {
@@ -94,4 +110,71 @@ button {
   border-radius: 10px;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.movie-name {
+  font-size: 2.5rem;
+}
+
+.popup-window {
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  margin: 10px 25%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.popup-img {
+  height: 230px;
+  margin-right: 20px;
+}
+
+.movie-info tr td {
+  width: 150px;
+}
+
+.popup-header {
+  display: flex;
+}
+
+.name-input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border: none;
+  width: 300px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.commnet-input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  width: 300px;
+  height: 100px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.popup-comment-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  width: 120px;
+  padding: 10px;
+  background-color: #9db2bf;
+  margin-top: 10px;
+}
+
+.x-mark {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  right: 20px;
+  background-color: transparent;
+  font-size: 12px;
+  border: none;
 }
