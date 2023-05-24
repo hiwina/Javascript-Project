@@ -1,44 +1,36 @@
-import './style/index.css';
-import { movieList, movieApi } from './modules/homepage.js';
-import image from './images/log.jpg';
-
-console.log(image);
-
-const movieContainer = document.querySelector('.card-container');
-const preview = document.getElementById('preview');
-const moviesLsit = await movieApi();
+const movieContainer = document.querySelector('card-container');
+const preview = document.querySelector('popup-window');
 
 movieContainer.addEventListener('click', (mov) => {
-  if (mov.target.classList.contains('comment-btn')) {
+  if (mov.target.classList.contains('commnet-btn')) {
     preview.classList.remove('remove');
     const id = parseFloat(mov.target.id);
-    const target = moviesLsit.find((x) => x.id === id);
+    const target = mov.find((x) => x.id === id);
     if (target !== undefined) {
       preview.innerHTML = `
             <div class="popup-window">
-                <button class="x-mark" ><i id="close" class="fa-solid fa-xmark fa-3x"></i></button>
                 <div class="popup-header">
                     <div>
-                        <img class="popup-img" src=${target.image.original} alt="">
+                        <img class="popup-img" src="images/cher.jpg" alt="">
                     </div>
                     <div>
-                        <h2 class="movie-name">${target.name}</h2>
+                        <h2 class="movie-name">CHERNOBYL</h2>
                         <table class="movie-info">
                             <tr>
                                 <td>Rating</td>
-                                <td>${target.rating.average}</td>
+                                <td>7.8</td>
                             </tr>
                             <tr>
-                                <td>Gener</td>
-                                <td>${target.genres[0]}</td>
+                                <td>Type</td>
+                                <td>historical</td>
                             </tr>
                             <tr>
                                 <td>Release Date</td>
-                                <td>${target.ended}</td>
+                                <td>2018</td>
                             </tr>
                             <tr>
-                                <td>Language</td>
-                                <td>${target.language}</td>
+                                <td>Name</td>
+                                <td>SilkRoad</td>
                             </tr>
                         </table>
                     </div>
@@ -59,11 +51,3 @@ movieContainer.addEventListener('click', (mov) => {
     }
   }
 });
-
-preview.addEventListener('click', (mov) => {
-  if (mov.target.id === 'close') {
-    preview.classList.add('remove');
-  }
-});
-
-movieList();
