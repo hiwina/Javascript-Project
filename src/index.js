@@ -9,8 +9,8 @@ const movieContainer = document.querySelector('.card-container');
 const preview = document.getElementById('preview');
 const moviesLsit = await movieApi();
 
-const loadComment = async () => {
-  await getComments();
+const loadComment = async (id) => {
+  await getComments(id);
   displayComments;
 };
 
@@ -55,25 +55,29 @@ movieContainer.addEventListener('click', (mov) => {
                     </div>
                 </div>
                 <h3>Add Comment</h3>
-                <form action="" class="score-form">
+                <form action="" class="comment-form">
                     <input class="name-input" type="text" placeholder="Enter Your Name"><br>
                     <textarea class="comment-input" name="" id="" cols="30" rows="10" placeholder="Your insight"></textarea><br>
                     <button class="popup-comment-btn" type="submit">Comment</button>
                 </form>
             </div>
             `;
-      const commentForm = document.querySelector('.score-form');
+      const commentForm = document.querySelector('.comment-form');
       const name = document.querySelector('.name-input');
       const comment = document.querySelector('.comment-input');
       commentForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const userName = name.value;
         const userComment = comment.value;
-        addComment(userName, userComment);
+        addComment(userName, userComment, id);
         name.value = '';
         comment.value = '';
-        loadComment();
+        const commentsContainer = document.querySelector('.comments-container');
+        const newComment = document.createElement('p')
+        newComment.innerHTML = `${userName}: ${userName}`
+        commentsContainer.appendChild = newComment;
       });
+      loadComment(mov.target.id);
     }
   }
 });
