@@ -83,7 +83,7 @@ footer p {
 
 .movie-container {
   padding-left: 0;
-  border: 2px solid #B7B7B7;
+  border: 2px solid #b7b7b7;
   border-radius: 8px;
 }
 
@@ -117,14 +117,14 @@ footer p {
 button {
   width: 83%;
   padding: 15px;
-  background-color: #C4DFDF;
+  background-color: #c4dfdf;
   border: 1px solid black;
   border-radius: 10px;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #69c0c0;
   transition: 0.6s;
 }
