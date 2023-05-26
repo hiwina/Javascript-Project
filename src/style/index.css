@@ -169,11 +169,11 @@ button {
 }
 
 .x-mark {
-  position: absolute;
+  position: fixed;
   width: 35px;
   height: 35px;
   padding: 0;
-  right: 20px;
+  right: 330px;
   background-color: transparent;
   font-size: 12px;
   border: none;
