@@ -15,7 +15,7 @@ export const postData = async (name, comment, itemId) => {
       body: JSON.stringify({
         username: name,
         comment,
-        itemId,
+        item_id: itemId,
       }),
       headers: {
         'Content-Type': 'application/json',

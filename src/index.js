@@ -74,6 +74,7 @@ movieContainer.addEventListener('click', (mov) => {
         postData(userName, userComment, id);
         name.value = '';
         comment.value = '';
+        loadComment(mov.target.id);
       });
     }
   }
