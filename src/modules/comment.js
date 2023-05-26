@@ -1,0 +1,22 @@
+import { getData } from './api';
+
+let commentsList = [];
+
+export const getComments = async (id) => {
+  const getCommnetsList = await getData(id);
+  commentsList = getCommnetsList;
+  console.log(commentsList);
+};
+
+export const displayComments = () => {
+  const commentsContainer = document.querySelector('.comments-container');
+  commentsContainer.innerHTML = '';
+  if (commentsList.length > 0) {
+    commentsList.forEach((comment) => {
+      console.log(commentsList);
+      const newCommnet = document.createElement('p');
+      newCommnet.innerHTML = `${comment.username}: ${comment.comment}`;
+      commentsContainer.appendChild(newCommnet);
+    });
+  }
+};
