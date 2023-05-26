@@ -1,6 +1,6 @@
 import './style/index.css';
 import { movieList, movieApi } from './modules/homepage.js';
-import { getComments, displayComments } from './modules/comment';
+import { getComments, displayComments, commentsListNum } from './modules/comment';
 import image from './images/log.jpg';
 import { postData } from './modules/api';
 
@@ -22,7 +22,7 @@ movieContainer.addEventListener('click', (mov) => {
     const target = moviesLsit.find((x) => x.id === id);
     if (target !== undefined) {
       preview.innerHTML = `
-            <div class="popup-window" style="overflow:scroll; height:600px;">
+            <div class="popup-window">
                 <button class="x-mark" ><i id="close" class="fa-solid fa-xmark fa-3x"></i></button>
                 <div class="popup-header">
                     <div>
@@ -51,7 +51,7 @@ movieContainer.addEventListener('click', (mov) => {
                     </div>
                 </div>
                 <div class="comments">
-                    <h3>Comments(2)</h3>
+                    <h3>Comments(<span class="comment-num"></span>)</h3>
                     <div class="comments-container">
                     </div>
                 </div>
@@ -63,6 +63,10 @@ movieContainer.addEventListener('click', (mov) => {
                 </form>
             </div>
             `;
+      const commentNum = document.querySelector('.comment-num');
+      commentsListNum(mov.target.id).then((value) => {
+        commentNum.innerHTML = `${value.length}`;
+      });
       loadComment(mov.target.id);
       const commentForm = document.querySelector('.comment-form');
       const name = document.querySelector('.name-input');
@@ -75,6 +79,9 @@ movieContainer.addEventListener('click', (mov) => {
         name.value = '';
         comment.value = '';
         loadComment(mov.target.id);
+        commentsListNum(mov.target.id).then((value) => {
+          commentNum.innerHTML = `${value.length}`;
+        });
       });
     }
   }

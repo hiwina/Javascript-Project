@@ -10,6 +10,7 @@ const movieList = async () => {
   allMovies.forEach((card) => {
     const CardContainer = document.querySelector('.card-container');
     const cardUL = document.createElement('ul');
+    cardUL.classList.add('movie-container');
     const cardLI = document.createElement('li');
     cardLI.className = 'movie-cards';
     cardLI.innerHTML = `<div>
@@ -20,7 +21,7 @@ const movieList = async () => {
                           <i class="fa fa-heart" aria-hidden="true"></i>
                           <p>20 likes</p>
                         </div>
-                        <button class="comment-btn" id=${card.id} >Comments</button>`;
+                        <button class="comment-btn" id=${card.id} >Comment</button>`;
 
     cardUL.appendChild(cardLI);
     CardContainer.appendChild(cardUL);

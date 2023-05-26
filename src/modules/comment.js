@@ -5,7 +5,11 @@ let commentsList = [];
 export const getComments = async (id) => {
   const getCommnetsList = await getData(id);
   commentsList = getCommnetsList;
-  console.log(commentsList);
+};
+
+export const commentsListNum = async (id) => {
+  const numComments = await getData(id);
+  return numComments;
 };
 
 export const displayComments = () => {
@@ -13,7 +17,6 @@ export const displayComments = () => {
   commentsContainer.innerHTML = '';
   if (commentsList.length > 0) {
     commentsList.forEach((comment) => {
-      console.log(commentsList);
       const newCommnet = document.createElement('p');
       newCommnet.innerHTML = `${comment.username}: ${comment.comment}`;
       commentsContainer.appendChild(newCommnet);
