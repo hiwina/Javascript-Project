@@ -88,6 +88,10 @@ Run This command
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Hiwot Bayissa**
+
+- GitHub: [@hiwina](https://github.com/hiwina)
+
 👤 **Esmatullah Qadeemi**
 
 - GitHub: [@githubhandle](https://github.com/Esmatullah12)
