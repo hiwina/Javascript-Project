@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "repository": {
-    "url": "git+https://github.com/hiwina/Javascript-Project.git"
+    "url": "git+https://github.com/hiwina/Javascript-project.git"
   },
   "main": "index.js",
   "scripts": {
