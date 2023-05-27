@@ -7,11 +7,6 @@ export const getComments = async (id) => {
   commentsList = getCommnetsList;
 };
 
-export const commentsListNum = async (id) => {
-  const numComments = await getData(id);
-  return numComments;
-};
-
 export const displayComments = () => {
   const commentsContainer = document.querySelector('.comments-container');
   commentsContainer.innerHTML = '';

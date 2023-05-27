@@ -1,8 +1,9 @@
 import './style/index.css';
 import { movieList, movieApi } from './modules/homepage.js';
-import { getComments, displayComments, commentsListNum } from './modules/comment';
+import { getComments, displayComments} from './modules/comment';
 import image from './images/log.jpg';
 import { postData } from './modules/api';
+import { commentsListNum } from './modules/commentCounter';
 
 console.log(image);
 
@@ -63,10 +64,7 @@ movieContainer.addEventListener('click', (mov) => {
                 </form>
             </div>
             `;
-      const commentNum = document.querySelector('.comment-num');
-      commentsListNum(mov.target.id).then((value) => {
-        commentNum.innerHTML = `${value.length}`;
-      });
+      commentsListNum(mov.target.id)
       loadComment(mov.target.id);
       const commentForm = document.querySelector('.comment-form');
       const name = document.querySelector('.name-input');
@@ -79,9 +77,7 @@ movieContainer.addEventListener('click', (mov) => {
         name.value = '';
         comment.value = '';
         loadComment(mov.target.id);
-        commentsListNum(mov.target.id).then((value) => {
-          commentNum.innerHTML = `${value.length}`;
-        });
+        commentsListNum(mov.target.id)
       });
     }
   }
