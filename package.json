@@ -43,6 +43,9 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  },
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
@@ -272,7 +275,6 @@
     "fs-minipass": "^3.0.2",
     "fs-monkey": "^1.0.3",
     "fs.realpath": "^1.0.0",
-    "fsevents": "^2.3.2",
     "ftp": "^0.3.10",
     "function-bind": "^1.1.1",
     "function.prototype.name": "^1.1.5",
