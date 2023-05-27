@@ -10,6 +10,7 @@
       - [Tech Stack](#tech-stack)
       - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Project presentaiton](#project-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -60,7 +61,8 @@ This is a JavaScript Capstone project. In this project we use TVMaze api for get
 ## 🚀 Live Demo  <a name="live-demo"></a>
 
 [@liveDemo](https://hiwina.github.io/Javascript-Project/dist/)
-##Project Demonistration
+
+##Project Demonistration <a name="project-demo"></a>
 [@Demo](https://drive.google.com/file/d/1D4qGR9qGUX5vjfLy84ORVqqRHdRrZAiW/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
