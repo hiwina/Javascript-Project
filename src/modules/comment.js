@@ -1,4 +1,4 @@
-import { getData } from './api';
+import { getData } from './api.js';
 
 let commentsList = [];
 

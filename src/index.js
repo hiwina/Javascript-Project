@@ -1,10 +1,11 @@
 import './style/index.css';
 import { movieList, movieApi } from './modules/homepage.js';
-import { getComments, displayComments} from './modules/comment';
+import { getComments, displayComments } from './modules/comment';
 import image from './images/log.jpg';
 import { postData } from './modules/api';
 import { commentsListNum } from './modules/commentCounter';
 
+// eslint-disable-next-line no-console
 console.log(image);
 
 const movieContainer = document.querySelector('.card-container');
@@ -64,7 +65,7 @@ movieContainer.addEventListener('click', (mov) => {
                 </form>
             </div>
             `;
-      commentsListNum(mov.target.id)
+      commentsListNum(mov.target.id);
       loadComment(mov.target.id);
       const commentForm = document.querySelector('.comment-form');
       const name = document.querySelector('.name-input');
@@ -77,7 +78,7 @@ movieContainer.addEventListener('click', (mov) => {
         name.value = '';
         comment.value = '';
         loadComment(mov.target.id);
-        commentsListNum(mov.target.id)
+        commentsListNum(mov.target.id);
       });
     }
   }
