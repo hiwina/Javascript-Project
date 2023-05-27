@@ -24,7 +24,7 @@
 
 # 📖 [JavaScript Capstone Project] <a name="about-project"></a>
 
-This is a JavaScript Capstone project. In this project we use TVMaze api for getting movies information and render it in our website. this project has also addtional feature for example you can like movies and share your comment about the movies.
+This is a JavaScript Capstone project. In this project we use TVMaze api for getting movies information and render it in our website. this project has also addtional feature for example you can like movies and share your comment about the movies. for more information about this project click [here](https://drive.google.com/file/d/1D4qGR9qGUX5vjfLy84ORVqqRHdRrZAiW/view)
 
 ## 🛠 Built With <a name="built-with"></a>
 
