@@ -57,9 +57,10 @@ This is a JavaScript Capstone project. In this project we use TVMaze api for get
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
-## 🚀 Live Demo and Demo <a name="live-demo"></a>
+## 🚀 Live Demo  <a name="live-demo"></a>
 
 [@liveDemo](https://hiwina.github.io/Javascript-Project/dist/)
+##Project Demonistration
 [@Demo](https://drive.google.com/file/d/1D4qGR9qGUX5vjfLy84ORVqqRHdRrZAiW/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
