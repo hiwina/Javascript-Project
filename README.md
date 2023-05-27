@@ -59,7 +59,7 @@ This is a JavaScript Capstone project. In this project we use TVMaze api for get
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Comming soon.
+[@liveDemo](https://hiwina.github.io/Javascript-Project/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
