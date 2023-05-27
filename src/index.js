@@ -4,7 +4,6 @@ import { getComments, displayComments, commentsListNum } from './modules/comment
 import image from './images/log.jpg';
 import { postData } from './modules/api.js';
 
-// eslint-disable-next-line no-console
 console.log(image);
 
 const movieContainer = document.querySelector('.card-container');
