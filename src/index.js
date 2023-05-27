@@ -1,9 +1,10 @@
 import './style/index.css';
 import { movieList, movieApi } from './modules/homepage.js';
-import { getComments, displayComments, commentsListNum } from './modules/comment';
+import { getComments, displayComments, commentsListNum } from './modules/comment.js';
 import image from './images/log.jpg';
-import { postData } from './modules/api';
+import { postData } from './modules/api.js';
 
+// eslint-disable-next-line no-console
 console.log(image);
 
 const movieContainer = document.querySelector('.card-container');
