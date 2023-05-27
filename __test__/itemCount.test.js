@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  * */
 
-import itemsCounter from './itemCounter.js';
+import itemsCounter from '../src/modules/itemCounter.js';
 
 describe('Testing items counter', () => {
   const link = document.createElement('p');

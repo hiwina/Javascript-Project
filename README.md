@@ -22,9 +22,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [JavaScript Capstone Project] <a name="about-project"></a>
 
-This is a JavaScript Capstone project. In this project we use tvmaze api for getting of movies and render it in out website. this project has also addtional feature for example you can like movie and make comment about the movie.
+This is a JavaScript Capstone project. In this project we use TVMaze api for getting movies information and render it in our website. this project has also addtional feature for example you can like movies and share your comment about the movies.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +53,7 @@ This is a JavaScript Capstone project. In this project we use tvmaze api for get
 
 ### Key Features <a name="key-features"></a>
 
-- You can find information about the movie and can share your comment about movies.
+- You can find information about the movies and also you can share your comment about it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
@@ -80,7 +80,7 @@ Clone this repository to your desired folder:
 Run This command
 
 ```sh
-  cd leaderboard
+  cd JavaScript Capstone project
   git clone https://github.com/hiwina/Javascript-Project.git
 ```
 
